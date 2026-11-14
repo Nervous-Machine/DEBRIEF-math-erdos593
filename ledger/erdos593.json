@@ -1,0 +1,322 @@
+{
+ "missions": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "title": "The claimed solutions of Erdős Problem #593 (finite triple systems forced by uncountable chromatic number)",
+   "kind": "audit",
+   "protocol_version": "0.1.0",
+   "claim_rule_met": false,
+   "label": "Erdős #593",
+   "area": "Set theory and hypergraphs: chromatic number",
+   "rests_on": "two independent arXiv or PDF write-ups and two Lean developments, one per claimant",
+   "pods": [
+    "DEBRIEF-math-erdos593"
+   ],
+   "began": "2026-11-14",
+   "status": "active",
+   "record_quality": "full_ledger",
+   "record_note": "Opened at tier zero: the claim and its artifacts are pinned, the gaps are drawn, nothing has been run or read by Nervous Machine.",
+   "record_limits": [
+    "Nothing in this record has been checked by Nervous Machine or by anyone independent of the claimants; every item is an open gap."
+   ],
+   "scope_limits": [
+    "Nervous Machine keeps score of the checks; it does not check the mathematics line by line.",
+    "Public record through 2026-11-14."
+   ],
+   "opening": {
+    "spoken": "This record covers the claimed solution of Erdős problem #593: what has been claimed, what it rests on, and what would have to be checked by whom."
+   },
+   "short_version": {
+    "spoken": "Erdős asked which finite 3-uniform hypergraphs must appear in every 3-uniform hypergraph of uncountable chromatic number, a five-hundred-dollar problem. In June and July 2026 two claimants, Eric Li and Samuil Petkov, each working with an AI system, listed proofs reaching the same characterisation, each with a Lean development. Two claims that agree is more than one, and still nobody independent has reported building either development or reading either argument. Everything here is open."
+   },
+   "what_happened": {
+    "spoken": "The claim was pinned from the public record: the problem page, the proof-claims thread, and every artifact the claimants made public, by commit or hash. Nothing was run. The gaps that follow are the checks still owed."
+   },
+   "implications": {
+    "rely_on": [],
+    "do_not_rely_on": [
+     {
+      "spoken": "the claimed solution as settled; nothing in it has standing yet",
+      "finding_ids": []
+     }
+    ],
+    "stop": [],
+    "new": []
+   },
+   "certainty_statement": {
+    "spoken": "Nothing is certified or accepted. Every item is open."
+   },
+   "sources": [
+    {
+     "kind": "problem",
+     "ref": "https://www.erdosproblems.com/593"
+    },
+    {
+     "kind": "repo",
+     "ref": "github.com/SamPetkov/Erdos593 at commit 70675e5ce5646718df4e6fd4f93c509ef3447a77 (2026-10-14); licence CC-BY-4.0; 551 Lean files; no lakefile at the root"
+    },
+    {
+     "kind": "pdf",
+     "ref": "https://github.com/SamPetkov/Erdos593/blob/main/erdos593_obligatory_triple_systems.pdf (in the repository at the pinned commit)"
+    },
+    {
+     "kind": "arxiv",
+     "ref": "arXiv:2606.24882v2 \"A Resolution of Erdős Problems 593 and 1177: Obligatory Triple Systems and Exact Spectra\" (published 2026-06-23, last revised 2026-07-23)"
+    },
+    {
+     "kind": "repo",
+     "ref": "github.com/ericlisg/erdos-593-1177-lean at commit 5dcb6e4906df03f2e4294b21be73b55db7736f5a (2026-07-23); licence Apache-2.0; 65 Lean files; has a lakefile"
+    },
+    {
+     "kind": "formal statement (third party)",
+     "ref": "github.com/google-deepmind/formal-conjectures FormalConjectures/ErdosProblems/593.lean at e028240a61822d970c933f4656f51da025cf200b"
+    }
+   ]
+  }
+ ],
+ "cycles": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "cycle": 0,
+   "dated": "2026-06-23 to 2026-11-14",
+   "kind": "replay",
+   "preregistered": {
+    "question": "What is on the public record about this claim?",
+    "rule": "no look-ahead; each event dated by its first public posting; artifacts pinned by commit or hash",
+    "predictions": [],
+    "commit": null,
+    "before_data": false
+   },
+   "outcome": {
+    "verdict": "admitted",
+    "numbers": {
+     "claims": 2,
+     "artifacts": 4
+    }
+   },
+   "spoken": "Eric Li posted a paper on arXiv claiming to resolve problems 593 and 1177; the Erdős-problems AI wiki listed it as a candidate full solution, marked unverified. Samuil Petkov listed a proof claim reaching the same characterisation, stating it had been checked by AI models and not by an expert. Eric Li listed his proof claim on the problem page. Eric Li's Lean repository reached its current commit. Samuil Petkov's repository reached its current commit, with a Lean formalisation under a formalization folder. The problem page lists two proof claims, neither marked accepted by the site. A third-party formalisation of the problem statement exists.",
+   "finding_ids": [],
+   "gap_ids": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4"
+   ]
+  }
+ ],
+ "findings": [],
+ "gaps": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG1",
+   "title": "The Lean development has not been built or kernel-checked by anyone outside the claimant",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 1,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a pre-registered rerun: fetch at the pinned commit, build, confirm no sorry or admit, print the axioms",
+     "kind": "rerun",
+     "external": true,
+     "who_could_act": "anyone with a machine and a few hours"
+    }
+   ],
+   "spoken": "The claimant reports a Lean development that compiles with standard axioms only. Nobody outside the claimant has reported building it.",
+   "ask": {
+    "spoken": "A rerun of the Lean build on an independent machine, written down first."
+   },
+   "expected_signal": "a rerun cycle reporting build exit status, the sorry/admit scan and the axiom list for the main theorem",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG2",
+   "title": "Do the formal statements say what the problem asks?",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 2,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a machine comparison of the claimant's main theorem with the third-party formal statement in google-deepmind/formal-conjectures, then a human read of any difference",
+     "kind": "trace",
+     "external": true,
+     "who_could_act": "anyone who can read Lean; the two statements are public"
+    },
+    {
+     "what": "two independent mathematicians read the formal statement against the problem as posed and sign, or refuse",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area, about an hour with a reading guide"
+    }
+   ],
+   "spoken": "A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem Erdős posed is a separate question that a person has to answer. A third-party formalization of the problem statement exists, so part of this can be compared by machine.",
+   "ask": {
+    "spoken": "A reading of the formal statement against the problem as posed, by someone who did not write it."
+   },
+   "expected_signal": "a trace cycle and two signed read cycles, or a refusal naming the difference",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG3",
+   "title": "No independent mathematician has reported reading the proof, and there is no referee report",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 3,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a read cycle by a mathematician in the area who is not an author, signing or refusing each main step",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area"
+    },
+    {
+     "what": "a referee report or journal acceptance, recorded by date",
+     "kind": "measurement",
+     "external": true,
+     "who_could_act": "a journal; the record notes the date when it happens"
+    }
+   ],
+   "spoken": "The claim is listed on the problem's page, which states that appearing there is no guarantee of correctness and that nobody associated with the site has examined it. No independent reading is on the public record.",
+   "ask": {
+    "spoken": "Someone in the field reads it and says, under their name, what holds and what does not."
+   },
+   "expected_signal": "a signed or refused read cycle; a dated referee report",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG4",
+   "title": "Do the two claims' main theorems state the same thing?",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 4,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a trace setting the two main theorem statements and the third-party formal statement side by side, with any difference named",
+     "kind": "trace",
+     "external": true,
+     "who_could_act": "anyone who can read Lean"
+    }
+   ],
+   "spoken": "Two claimants reached the same characterisation independently. Their Lean statements can be set side by side; if they are the same statement, each development is a check on the other. Nobody has done that comparison.",
+   "ask": {
+    "spoken": "a trace setting the two main theorem statements and the third-party formal statement side by side, with any difference named"
+   },
+   "expected_signal": "a trace cycle stating identical, equivalent or different for each pair",
+   "resolution_by": "none registered"
+  }
+ ],
+ "anomalies": [],
+ "background": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "Erdős Problem #593",
+   "spoken": "A 3-uniform hypergraph has chromatic number greater than aleph-null if its vertices cannot be coloured with countably many colours without a monochromatic edge. Which finite 3-uniform hypergraphs appear inside every such hypergraph? For ordinary graphs Erdős considered the question solved: uncountably chromatic graphs contain every finite bipartite graph but need not contain any fixed odd cycle.",
+   "source": "https://www.erdosproblems.com/593"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "Proof claims on erdosproblems.com",
+   "spoken": "The site lets anyone list a claimed proof. Its own text says that appearing there is no guarantee of correctness and does not mean anyone associated with the site has examined it. A listed claim is where checking starts, not where it ends.",
+   "source": "https://www.erdosproblems.com/forum/thread/593/proof-claims"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "The claim by Samuil Petkov",
+   "spoken": "The claim characterises the obligatory finite triple systems: after deleting isolated vertices, exactly the linear systems in which every hyperedge-node meets a bridge in the Levi graph and every Berge cycle has even length. The author states that the argument was checked by AI models several times and not by an expert, and that a formalisation was under way at submission; the repository now holds a Lean formalisation.",
+   "source": "https://www.erdosproblems.com/forum/thread/593/proof-claims"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos593-2026-11",
+   "pod": "DEBRIEF-math-erdos593",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "The claim by Eric Li",
+   "spoken": "The claim resolves problems 593 and 1177 together. The obligatory finite triple systems are exactly the class generated from private-vertex expansions of finite bipartite graphs by finite disjoint unions and one-point amalgamations, equivalently the linear systems with a bridge at every hyperedge-node of the Levi graph and only even Berge cycles. The proof uses an exact bridge-trace theorem for one-apex sequence lifts, and also constructs, for every uncountable cardinal, a linear triple system of exactly that chromatic number. The author states the paper was public on arXiv on June 23, 2026, before any other proof of 593 or 1177, and welcomes others to join the formalisation.",
+   "source": "https://www.erdosproblems.com/forum/thread/593/proof-claims"
+  }
+ ],
+ "sessions": []
+}
