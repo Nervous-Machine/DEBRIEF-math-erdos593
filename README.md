@@ -6,6 +6,8 @@ This claim is on the public claims board, https://math-board.nervousmachine.com,
 
 **Standing.** Certified 0. Accepted 0. Refuted 0. Open gaps 4. The claim and its public artifacts are pinned and the checks still owed are listed. Nothing has been built or run. A reading guide to the formal statements exists (cycle 1); no person who is not an author has signed it.
 
+**Elsewhere.** On 2026-11-16 the [Palomar registry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-16-000018) registered Samuil Petkov's formalisation (`SamPetkov/Erdos593-formalization` at `ea81bf2`, a repository separate from the one pinned here). Palomar replayed the proof through two independent kernels, and a language model judged the statement against the informal claim. Palomar says an entry is not a certification that the formal statement matches the informal one. That human reading is still the open gap here. DeepMind's formal-conjectures marks the main statement open and some variants solved; erdosproblems.com lists the problem as open. All of this is recorded in the ledger as the dated cycle `external-2026-11-17`.
+
 ## The problem
 
 A 3-uniform hypergraph has chromatic number greater than aleph-null if its vertices cannot be coloured with countably many colours without a monochromatic edge. Which finite 3-uniform hypergraphs appear inside every such hypergraph? For ordinary graphs Erdős considered the question solved: uncountably chromatic graphs contain every finite bipartite graph but need not contain any fixed odd cycle.
