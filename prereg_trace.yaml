@@ -1,0 +1,72 @@
+# Pre-registration, cycle 1: a definitional trace (reading guide) of the formal statements of Erdős Problem #593, for
+# human semantic review. Written 2026-11-17 at tier zero (nothing built or run) and BEFORE reading any definition behind
+# the statements (the third party's UniformHypergraph, IsObligatory, Appears, chromaticCardinal; Eric Li's FTS,
+# Obligatory, Bclass, IntrinsicObligatory, reduce; Samuil Petkov's TripleSystem, IsObligatory, isolatedReduction,
+# Intrinsic, Constructible; or the Mathlib definitions under them) or writing any rendering. Changes after this point go
+# in an amendment at the end.
+mission: DEBRIEF-math-erdos593
+cycle: 1
+dated: "2026-11-17"
+by: "Nervous Machine (Heidi Bennett; Claude Code as the operating agent)"
+question: >
+  Can the two open semantic gaps (EG2: do the formal statements say what the problem asks? EG4: do the two claimants'
+  main theorems state the same thing?) be made cheaper for a human reviewer, by laying out the problem as posed, the
+  third-party formal statement and each claimant's main theorem verbatim, every definition they depend on down to
+  Mathlib, a plain rendering of each piece, the differences between the three, and the specific points a mathematician
+  has to confirm?
+what_this_cycle_is:
+  - "An aid for review: trace/DEFINITIONAL-TRACE.md, read from source files fetched read-only at the pinned commits, plus
+     cycles/trace-1/Trace.lean, a file of #check / #print commands and small examples written for a later Lean run."
+  - "The renderings are the operating agent's reading of Lean and Mathlib source. They are a reading, not a check."
+what_this_cycle_is_not:
+  - "Not a build, and not a kernel check of anything. Nothing is cloned, built or executed: no lake, no claimant code.
+     Trace.lean is written, not run; no result is claimed from it (EG1 stays untouched)."
+  - "Not an independent human semantic review. EG2 and EG4 stay open after this cycle whatever the trace says; the
+     trace moves no standing."
+  - "It does not read or judge either paper's argument (EG3), or problem 1177, which shares Li's repository."
+rules:
+  R1: "Every Lean statement is quoted verbatim from the pinned files with file and line: formal-conjectures
+       FormalConjectures/ErdosProblems/593.lean at e028240a (blob 732d1dc4) and the utility files it imports at the same
+       commit; ericlisg/erdos-593-1177-lean at 5dcb6e49; SamPetkov/Erdos593 at 70675e5c; Mathlib at the revision each
+       development's lake-manifest pins, read at that revision. Where a file was not read, the trace says so."
+  R2: "Each rendering is marked as the agent's reading. Where the agent is unsure what a definition means, it says so."
+  R3: "Any place where a formal statement and the problem as posed, or two formal statements, differ in a way the agent
+       can see (what a triple system is, what 'appears' means, induced or not, labelled edges or multi-edges, the
+       chromatic threshold, the universe of hosts, isolated vertices, the shape of the answer) is recorded as a
+       discrepancy whether or not it looks harmless, and as an anomaly in the ledger if it could change the meaning."
+  R4: "Worked examples are written as Lean commands for a later run and are marked unrun; nothing is asserted as checked."
+observed_before_this_prereg:
+  - "The problem page: 'Characterize those finite 3-uniform hypergraphs which appear in every 3-uniform hypergraph of
+     chromatic number > aleph_0.' citing [Er95d]; it adds that for graphs a chromatic number >= aleph_1 forces every
+     finite bipartite graph but no fixed odd cycle."
+  - "The formal-conjectures statement (l.44, l.64-66): erdos_593.answer : Set ((n : N) x UniformHypergraph (Fin n) 3) :=
+     sorry, and theorem erdos_593 : {p | p.2.IsObligatory} = erdos_593.answer, tagged research open. The answer is left
+     blank, so no claimant theorem can close it by exact without supplying an answer set."
+  - "Li's certificate (RequestProject/PublicationCertificate.lean l.40-42): for all F : FTS, (FTS.Obligatory.{u} F <->
+     Bclass F) and (Bclass F <-> F.reduce.IntrinsicObligatory), universe-polymorphic in u."
+  - "Petkov's endpoints (formalization/Erdos593/TripleSystem/ObligatoryClassification.lean l.20-22, l.39-41): for
+     {V E : Type u} (F : TripleSystem V E) [Fintype V] [Fintype E], F.IsObligatory <-> F.isolatedReduction.Intrinsic
+     and F.IsObligatory <-> Constructible F.isolatedReduction. A triple system there has a separate edge type E."
+  - "Both READMEs and Petkov's CLASSIFICATION_AUDIT.md describe the same answer in words. Petkov's README says his
+     negative half uses Li's one-apex lift and bridge-trace architecture and that neither the manuscript nor the
+     repository claims full informational independence from Li. Petkov's lakefile and lake-manifest are under
+     formalization/, not at the repository root."
+predictions:
+  P1: "Neither claimant states the formal-conjectures theorem or imports formal-conjectures; the three statements are
+       not textually identical, so every comparison is definitional, and no pair can be called identical."
+  P2: "The two claimants' 593 statements are equivalent in content in the agent's reading: same notion of 'appears'
+       (an injective, edge-preserving, not necessarily induced map), same threshold (not colourable with countably many
+       colours, i.e. chromatic number > aleph_0), same answer stated as an iff, both via deletion of isolated vertices.
+       Each is equivalent to the formal-conjectures notion of obligatory once its answer blank is filled."
+  P3: "At least three conventions need a sentence and none changes the meaning: the universe of host hypergraphs
+       (obligatory relative to hosts in Type u); Petkov's labelled edge type E (possible repeated edges) against plain
+       sets of triples; the labelled vertex set Fin n against an arbitrary finite type. The sharpest point for a human
+       is whether the stated answer is a characterisation in the sense Erdős meant, which no machine settles."
+  P4: "No discrepancy that could change the meaning will be seen. If one is (for example an induced notion of
+       'appears', a 'triple' allowing fewer than three vertices, or a threshold other than aleph_0), it is opened as an
+       anomaly the same day."
+standing_consequences:
+  any_outcome: "EG2 and EG4 remain open (in cycle). EG2's ask changes from 'read the formal statement' to 'read the trace
+                against the statements and the problem page, and sign or refuse each checklist item'. EG4 records the
+                agent's pairwise answer (identical, equivalent or different) as a reading awaiting a signature."
+  discrepancy_found: "An anomaly is opened naming it, and the README and the gap say so the same day."
