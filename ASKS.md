@@ -16,12 +16,12 @@ Signal expected: a rerun cycle reporting build exit status, the sorry/admit scan
 
 A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem Erdős posed is a separate question that a person has to answer. A third-party formalization of the problem statement exists, so part of this can be compared by machine.
 
-Status: proposed.
+Status: in cycle.
 
 - **a machine comparison of the claimant's main theorem with the third-party formal statement in google-deepmind/formal-conjectures, then a human read of any difference** — contribution kind: trace (a reading guide); who could act: anyone who can read Lean; the two statements are public.
 - **two independent mathematicians read the formal statement against the problem as posed and sign, or refuse** — contribution kind: read; who could act: a mathematician in the problem's area, about an hour with a reading guide.
 
-Signal expected: a trace cycle and two signed read cycles, or a refusal naming the difference. Resolution by: none registered.
+Signal expected: two signed read cycles with no refusal, or a refusal naming the line and the difference. Resolution by: none registered.
 
 ## 3. No independent mathematician has reported reading the proof, and there is no referee report (ledger id EG3)
 
@@ -36,10 +36,12 @@ Signal expected: a signed or refused read cycle; a dated referee report. Resolut
 
 ## 4. Do the two claims' main theorems state the same thing? (ledger id EG4)
 
-Two claimants reached the same characterisation independently. Their Lean statements can be set side by side; if they are the same statement, each development is a check on the other. Nobody has done that comparison.
+Two claimants reached the same characterisation, each with its own Lean development. Petkov's README says his negative direction uses Li's one-apex lift and bridge-trace architecture and claims no full informational independence from Li, so agreement shows two separately written formalisations of one statement, not two independent discoveries. If the two Lean statements are the same, each development is a check on the other's statement.
 
-Status: proposed.
+Status: in cycle.
 
 - **a trace setting the two main theorem statements and the third-party formal statement side by side, with any difference named** — contribution kind: trace (a reading guide); who could act: anyone who can read Lean.
+- **a mathematician who is not an author signs or refuses checklist line A4 of trace/DEFINITIONAL-TRACE.md** — contribution kind: read; who could act: a mathematician who reads Lean, about an hour with the reading guide.
+- **a Lean proof, in one environment, that the two claimants' statements are equivalent (or that each implies the formal-conjectures statement with its answer filled)** — contribution kind: trace (a reading guide); who could act: anyone who can port Lean across Mathlib versions.
 
-Signal expected: a trace cycle stating identical, equivalent or different for each pair. Resolution by: none registered.
+Signal expected: a signed or refused read of checklist line A4; or a machine-checked equivalence. Resolution by: none registered.

@@ -1,0 +1,47 @@
+# Cycle 1: a definitional trace (reading guide) of the three formal statements, for human semantic review.
+# Pre-registered in prereg_trace.yaml (hashed 2026-11-17T18:06:43Z) before any definition behind the statements was read.
+kind: trace
+cycle: 1
+dated: "2026-11-17"
+by: "Nervous Machine (Heidi Bennett; Claude Code as the operating agent)"
+not_an_author_of_the_claim: true
+preregistered:
+  commit: "prereg_trace.yaml"
+  results: ["trace/DEFINITIONAL-TRACE.md", "cycles/trace-1/Trace.lean", "cycles/trace-1/TracePetkov.lean", "cycles/trace-1/TraceFC.lean"]
+  question: "Can the open semantic gaps (EG2, EG4) be made cheaper for a human reviewer: the problem as posed, the third-party formal statement and both claimants' main theorems verbatim, every definition behind them, a plain rendering, the differences between the three, and the points to confirm?"
+  rule: "Statements quoted verbatim from files fetched read-only at the pinned commits, with file and line; renderings marked as the agent's; every discrepancy recorded whether harmless or not; worked examples written for a later Lean run and marked unrun; nothing cloned, built or executed; standing unchanged by construction."
+  predictions:
+    - "P1: no claimant states or imports the formal-conjectures theorem; no pair of statements is textually identical"
+    - "P2: the two claimants' statements are equivalent in content (same 'appears', same threshold, same answer as an iff, both via deletion of isolated vertices), and each fills the formal-conjectures blank"
+    - "P3: at least three conventions need a sentence (host universe, Petkov's edge-index type, Fin n labelling); none changes the meaning; the sharpest human point is whether the answer is a characterisation in Erdős's sense"
+    - "P4: no meaning-changing discrepancy is seen"
+  before_data: true
+outcome:
+  verdict: confirmed
+  numbers:
+    statements_traced: 4
+    definitions_cited: 55
+    discrepancies_recorded: 13
+    content_affecting_discrepancies_seen_by_agent: 0
+    anomalies_opened: 0
+    worked_examples_written: 4
+    worked_examples_checked_by_lean: 0
+    human_review: false
+    checklist_items: 6
+    pairwise_reading: "Li vs Petkov equivalent; each claimant vs formal-conjectures: same left-hand side, fills its blank answer; no pair identical"
+  misses:
+    - "P3 named the right conventions but the sharpest human point turned out to be the non-induced reading of 'appear in' (checklist A1) as much as the form of the characterisation (A3)."
+    - "Not foreseen: the record's own claim file was wrong that Petkov has no lakefile (it is under formalization/), and gap EG4's word 'independently' overstates what Petkov's README claims (D11, D12)."
+spoken: >-
+  Nervous Machine wrote the reading guide for the two questions on this record that a machine cannot settle: whether
+  the formal statements of problem 593 say what Erdős asked, and whether the two claimants' Lean theorems say the same
+  thing. The guide quotes the problem page, the third-party formal statement and both claimants' main theorems word for
+  word, traces every symbol to its definition in the claimants' files and in Mathlib with file and line, and lays the
+  three side by side. In the agent's reading the two claimants state the same theorem in different encodings, and each
+  fills the blank that the third-party statement leaves for the answer. Thirteen differences are written down; none
+  changes the meaning. The one interpretive choice all three share is that "appear in" means a copy that need not be
+  induced. Nothing was built or run, the Lean examples are written but not yet checked, and the readings are the
+  system's, not a mathematician's, so nothing changed standing. A combinatorialist can now sign or refuse four lines in
+  under an hour.
+finding_ids: []
+gap_ids: ["EG2", "EG4"]
