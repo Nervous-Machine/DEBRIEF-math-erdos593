@@ -2,13 +2,13 @@
 
 Each open gap below is a place a contribution can land. A contribution is one cycle in this repository's ledger, under your name. How to contribute, and the templates: https://github.com/Nervous-Machine/DEBRIEF/blob/main/CONTRIBUTING.md
 
-## 1. The Lean development has not been built or kernel-checked by anyone outside the claimant (ledger id EG1)
+## 1. Eric Li's Lean development has not been built or kernel-checked by anyone outside the claimant (ledger id EG1)
 
-The claimant reports a Lean development that compiles with standard axioms only. Nobody outside the claimant has reported building it.
+Both claimants report Lean developments. Samuil Petkov's clean formalisation repository, now pinned here, was checked by the Palomar registry on 2026-11-16 through two independent kernels. Eric Li's development, shared with problem 1177, has not been built by anyone outside the claimant.
 
 Status: proposed.
 
-- **a pre-registered rerun: fetch at the pinned commit, build, confirm no sorry or admit, print the axioms** — contribution kind: rerun; who could act: anyone with a machine and a few hours.
+- **a pre-registered rerun of Eric Li's development (ericlisg/erdos-593-1177-lean at 5dcb6e4): fetch at the pinned commit, build, confirm no sorry or admit, print the axioms** — contribution kind: rerun; who could act: anyone with a machine and a few hours.
 
 Signal expected: a rerun cycle reporting build exit status, the sorry/admit scan and the axiom list for the main theorem. Resolution by: none registered.
 

@@ -6,7 +6,7 @@ This claim is on the public claims board, https://math-board.nervousmachine.com,
 
 **Standing.** Certified 0. Accepted 0. Refuted 0. Open gaps 4. The claim and its public artifacts are pinned and the checks still owed are listed. Nothing has been built or run. A reading guide to the formal statements exists (cycle 1); no person who is not an author has signed it.
 
-**Elsewhere.** On 2026-11-16 the [Palomar registry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-16-000018) registered Samuil Petkov's formalisation (`SamPetkov/Erdos593-formalization` at `ea81bf2`, a repository separate from the one pinned here). Palomar replayed the proof through two independent kernels, and a language model judged the statement against the informal claim. Palomar says an entry is not a certification that the formal statement matches the informal one. That human reading is still the open gap here. DeepMind's formal-conjectures marks the main statement open and some variants solved; erdosproblems.com lists the problem as open. All of this is recorded in the ledger as the dated cycle `external-2026-11-17`.
+**Elsewhere.** On 2026-11-16 the [Palomar registry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-16-000018) registered Samuil Petkov's clean formalisation (`SamPetkov/Erdos593-formalization` at `ea81bf2`), now pinned in this record alongside his earlier repository. Palomar replayed the proof through two independent kernels, and a language model judged the statement against the informal claim. Its main theorem and core definitions match, as text, the Petkov statement in the reading guide. Eric Li's development is still unchecked by anyone outside the claimant. Palomar says an entry is not a certification that the formal statement matches the informal one. That human reading is still the open gap here. DeepMind's formal-conjectures marks the main statement open and some variants solved; erdosproblems.com lists the problem as open. All of this is recorded in the ledger as the dated cycle `external-2026-11-17`.
 
 ## The problem
 
@@ -42,7 +42,7 @@ Status on the problem page as of 2026-11-14: listed as two proof claims; neither
 
 Each open gap is in `ASKS.md` with what closes it and who could act. In order:
 
-1. **The Lean development has not been built or kernel-checked by anyone outside the claimant** (EG1): A rerun of the Lean build on an independent machine, written down first.
+1. **Eric Li's Lean development has not been built or kernel-checked by anyone outside the claimant** (EG1): Petkov's formalisation was checked by Palomar on 2026-11-16; what remains is a rerun of Li's build on an independent machine, written down first.
 2. **Do the formal statements say what the problem asks?** (EG2): A mathematician who is not an author reads trace/DEFINITIONAL-TRACE.md against the formal statements and the problem page and signs or refuses its four checklist lines (A1 to A4), in under an hour. Two independent signatures close this gap.
 3. **No independent mathematician has reported reading the proof, and there is no referee report** (EG3): Someone in the field reads it and says, under their name, what holds and what does not.
 4. **Do the two claims' main theorems state the same thing?** (EG4): A mathematician who is not an author signs or refuses checklist line A4 of trace/DEFINITIONAL-TRACE.md (the two claimants' classes are the same), or someone ports both statements to one Mathlib version and proves them equivalent in Lean.

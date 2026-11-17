@@ -64,6 +64,10 @@
      "ref": "github.com/SamPetkov/Erdos593 at commit 70675e5ce5646718df4e6fd4f93c509ef3447a77 (2026-10-14); licence CC-BY-4.0; 551 Lean files; no lakefile at the root"
     },
     {
+     "kind": "repo",
+     "ref": "github.com/SamPetkov/Erdos593-formalization at commit ea81bf26158876b457845f7998277fe47aa0fd02 (2026-11-16); licence CC-BY-4.0; 173 Lean files; lakefile.toml, Challenge.lean and formalization.yaml at the root; the version registered by Palomar as PALOMAR-2026-11-16-000018; added to this record 2026-11-17"
+    },
+    {
      "kind": "pdf",
      "ref": "https://github.com/SamPetkov/Erdos593/blob/main/erdos593_obligatory_triple_systems.pdf (in the repository at the pinned commit)"
     },
@@ -275,9 +279,11 @@
      "human_review": false
     }
    },
-   "spoken": "The Palomar registry registered Samuil Petkov's formalisation on 2026-11-16 after replaying its proof through two independent kernels (nanoda and con-ron); a language model judged the statement. This is a machine check by a party other than the claimant, of a repository separate from the one pinned in this record. It is not a human reading of the statement.",
+   "spoken": "The Palomar registry registered Samuil Petkov's formalisation on 2026-11-16 after replaying its proof through two independent kernels (nanoda and con-ron); a language model judged the statement. That repository is now pinned in this record. Its main theorem and core definitions match, as text, the Petkov statement traced in cycle 1. This is a machine check by a party other than the claimant, not a human reading of the statement.",
    "finding_ids": [],
-   "gap_ids": []
+   "gap_ids": [
+    "EG1"
+   ]
   }
  ],
  "findings": [],
@@ -293,22 +299,29 @@
    },
    "audience": "briefing",
    "gap_id": "EG1",
-   "title": "The Lean development has not been built or kernel-checked by anyone outside the claimant",
+   "title": "Eric Li's Lean development has not been built or kernel-checked by anyone outside the claimant",
    "status": "proposed",
    "opened_cycle": 0,
    "priority": 1,
-   "history": [],
+   "history": [
+    {
+     "cycle": "palomar-2026-11-16",
+     "hypothesis": "a party other than the claimant has machine-checked a claimant's development",
+     "before_data": false,
+     "result": "Palomar replayed Samuil Petkov's formalisation (SamPetkov/Erdos593-formalization at ea81bf2) through the kernels nanoda and con-ron and registered it; its Challenge.lean states the same main theorem with the same core definitions as Petkov's statement traced in cycle 1 (compared as text 2026-11-17), with isolatedReduction's body left to the solution and pinned by the checked theorem isolatedReduction_inc. Petkov's part is checked; the gap is narrowed to Eric Li's development and stays open"
+    }
+   ],
    "closes_with": [
     {
-     "what": "a pre-registered rerun: fetch at the pinned commit, build, confirm no sorry or admit, print the axioms",
+     "what": "a pre-registered rerun of Eric Li's development (ericlisg/erdos-593-1177-lean at 5dcb6e4): fetch at the pinned commit, build, confirm no sorry or admit, print the axioms",
      "kind": "rerun",
      "external": true,
      "who_could_act": "anyone with a machine and a few hours"
     }
    ],
-   "spoken": "The claimant reports a Lean development that compiles with standard axioms only. Nobody outside the claimant has reported building it.",
+   "spoken": "Both claimants report Lean developments. Samuil Petkov's clean formalisation repository, now pinned here, was checked by the Palomar registry on 2026-11-16 through two independent kernels. Eric Li's development, shared with problem 1177, has not been built by anyone outside the claimant.",
    "ask": {
-    "spoken": "A rerun of the Lean build on an independent machine, written down first."
+    "spoken": "A rerun of Eric Li's Lean build on an independent machine, written down first."
    },
    "expected_signal": "a rerun cycle reporting build exit status, the sorry/admit scan and the axiom list for the main theorem",
    "resolution_by": "none registered"

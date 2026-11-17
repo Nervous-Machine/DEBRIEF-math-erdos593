@@ -30,6 +30,7 @@ claims:
       formalisation was under way at submission; the repository now holds a Lean formalisation.
     artifacts:
       - {kind: repo, repo: SamPetkov/Erdos593, commit: 70675e5ce5646718df4e6fd4f93c509ef3447a77, commit_date: "2026-10-14T00:09:40Z", license: CC-BY-4.0, lean_files: 551, lakefile: false}
+      - {kind: repo, repo: SamPetkov/Erdos593-formalization, commit: ea81bf26158876b457845f7998277fe47aa0fd02, commit_date: "2026-11-16T09:32:09Z", license: CC-BY-4.0, lean_files: 173, lakefile: true, note: "added 2026-11-17: the claimant's clean formalisation repository, the version registered by Palomar (PALOMAR-2026-11-16-000018); main theorem and core definitions textually identical to those traced in cycle 1"}
       - {kind: pdf, url: "https://github.com/SamPetkov/Erdos593/blob/main/erdos593_obligatory_triple_systems.pdf (in the repository at the pinned commit)"}
   - by: "Eric Li"
     ai: "GPT-5.5 Pro (as listed by the claimant)"
