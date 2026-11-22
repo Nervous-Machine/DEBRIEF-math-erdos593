@@ -83,6 +83,53 @@
      "kind": "formal statement (third party)",
      "ref": "github.com/google-deepmind/formal-conjectures FormalConjectures/ErdosProblems/593.lean at e028240a61822d970c933f4656f51da025cf200b"
     }
+   ],
+   "tooling": [
+    {
+     "by": "Samuil Petkov",
+     "tier": "subscription-pro",
+     "basis": "stated by the claimant: ChatGPT 5.6 Sol Pro, a Pro and Enterprise tier model",
+     "models": [
+      {
+       "model": "GPT-5.6 Sol Pro",
+       "id": "gpt-5-6-sol-pro",
+       "vendor": "OpenAI",
+       "public_release": "2026-07-09",
+       "tiers_at_release": [
+        "subscription-pro"
+       ],
+       "public_at_the_time": "yes",
+       "note": "public 6 days before the date submitted; the work's start is not stated"
+      }
+     ],
+     "work": {
+      "to": "2026-07-15"
+     },
+     "duration": "not stated",
+     "compute": "not stated"
+    },
+    {
+     "by": "Eric Li",
+     "tier": "subscription-pro",
+     "basis": "stated by the claimant: GPT-5.5 Pro, a model of the ChatGPT Pro, Business and Enterprise tiers",
+     "models": [
+      {
+       "model": "GPT-5.5 Pro",
+       "id": "gpt-5-5-pro",
+       "vendor": "OpenAI",
+       "public_release": "2026-04-23",
+       "tiers_at_release": [
+        "subscription-pro"
+       ],
+       "public_at_the_time": "yes"
+      }
+     ],
+     "work": {
+      "to": "2026-07-17"
+     },
+     "duration": "not stated",
+     "compute": "not stated"
+    }
    ]
   }
  ],
