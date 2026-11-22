@@ -4,7 +4,22 @@ A DEBRIEF mission record (protocol https://github.com/Nervous-Machine/DEBRIEF) f
 
 This claim is on the public claims board, https://math-board.nervousmachine.com, which shows its stage, who has contributed, and what it needs next.
 
-**Standing.** Certified 0. Accepted 0. Refuted 0. Open gaps 4. The claim and its public artifacts are pinned and the checks still owed are listed. Nothing has been built or run. A reading guide to the formal statements exists (cycle 1); no person who is not an author has signed it.
+<!-- standing:begin -->
+**Standing, 17 Nov 2026.** Stage: Reading guide written. Needs next: Eric Li's Lean development has not been built or kernel-checked by anyone outside the claimant ([what would close it](ASKS.md)).
+
+| certified | accepted | refuted | open gaps | cycles filed | last cycle |
+|---|---|---|---|---|---|
+| 0 | 0 | 0 | 4 | 2 | 17 Nov 2026 |
+
+| | |
+|---|---|
+| checked by machine | Palomar registry |
+| read by a person | nobody yet; [reading guide](trace/DEFINITIONAL-TRACE.md) |
+| elsewhere | [Palomar registry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-16-000018): registered · [DeepMind formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/6751c0f043985ac6647db28a45a63afdf21acffe/FormalConjectures/ErdosProblems/593.lean): open; variants solved · [erdosproblems.com](https://www.erdosproblems.com/): open |
+| related | [Erdős #1177](https://github.com/Nervous-Machine/DEBRIEF-math-erdos1177): resolved in the same paper (arXiv:2606.24882); same claimant · [Erdős #550](https://github.com/Nervous-Machine/DEBRIEF-math-erdos550): same claimant · [Erdős #731](https://github.com/Nervous-Machine/DEBRIEF-math-erdos731): same claimant · [Erdős #768](https://github.com/Nervous-Machine/DEBRIEF-math-erdos768): same claimant |
+
+Rendered from `ledger/` at regeneration; the full record is `SCORECARD.md`, what is owed is `ASKS.md`. Standing words: nothing has standing yet.
+<!-- standing:end -->
 
 **Elsewhere.** On 2026-11-16 the [Palomar registry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-16-000018) registered Samuil Petkov's clean formalisation (`SamPetkov/Erdos593-formalization` at `ea81bf2`), now pinned in this record alongside his earlier repository. Palomar replayed the proof through two independent kernels, and a language model judged the statement against the informal claim. Its main theorem and core definitions match, as text, the Petkov statement in the reading guide. Eric Li's development is still unchecked by anyone outside the claimant. Palomar says an entry is not a certification that the formal statement matches the informal one. That human reading is still the open gap here. DeepMind's formal-conjectures marks the main statement open and some variants solved; erdosproblems.com lists the problem as open. All of this is recorded in the ledger as the dated cycle `external-2026-11-17`.
 
